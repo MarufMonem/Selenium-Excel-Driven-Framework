@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616f41fc-d5b6-4744-88ae-18439d182a52" name="Changes" comment="Workbook">
+    <list default="true" id="616f41fc-d5b6-4744-88ae-18439d182a52" name="Changes" comment="Added the ability to find the &quot;Testcase&quot; column in the workbook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExcelDrivenData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExcelDrivenData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dataDriven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataDriven.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +35,20 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="dataDriven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataDriven" />
+      <module name="ExcelDriven" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.dataDriven" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668833100326</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the ability to find the &quot;Testcase&quot; column in the workbook">
+      <created>1668835017935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668835017935</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Excel driven framework project created" />
     <MESSAGE value="Workbook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Workbook" />
+    <MESSAGE value="Added the ability to find the &quot;Testcase&quot; column in the workbook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to find the &quot;Testcase&quot; column in the workbook" />
   </component>
 </project>

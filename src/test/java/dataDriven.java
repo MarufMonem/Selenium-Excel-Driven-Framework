@@ -7,13 +7,17 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class dataDriven {
-    public static void main(String[] args) throws IOException {
+
+    public static ArrayList<String> getData(String testCaseName) throws IOException{
+        ArrayList<String> testData = new ArrayList<String>();
+
         FileInputStream file = new FileInputStream("X:\\Self improvement\\Selenium Udemy\\Code\\ExcelDriven\\ExcelDrivenData.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(file);
-        
+
         int sheetCount = workbook.getNumberOfSheets();
         for(int i=0; i<sheetCount; i++){
             if(workbook.getSheetName(i).equalsIgnoreCase("sheet1")) {
@@ -27,13 +31,33 @@ public class dataDriven {
                     Cell value = firstRowCellData.next(); //goes to the first column
                     if(value.getStringCellValue().equalsIgnoreCase("Testcases")){
 //                        desired column
-                        columnNumber =k;
+                        columnNumber =k; //with this we know which column has the test case names
                     }
                     k++; // helps us to get column value
                 }
                 System.out.println("column number for Testcase: " + columnNumber);
+                while (rows.hasNext()){
+                    Row r  = rows.next(); //go to the first row
+
+                    // get me the cell value only at the Row X ColumnNumber value
+                    if(r.getCell(columnNumber).getStringCellValue().equalsIgnoreCase
+                            (testCaseName)){
+//                        pull all the data of the row:
+                        Iterator<Cell> cellVal = r.cellIterator();
+                        while(cellVal.hasNext()){
+                            String data = cellVal.next().getStringCellValue();
+                            System.out.println(data);
+                            testData.add(data);
+                        }
+                    }
+
+                }
 //                break;
             }
         }
+        return testData;
+    }
+    public static void main(String[] args) throws IOException {
+        ArrayList<String> data= getData("Purchase");
     }
 }
