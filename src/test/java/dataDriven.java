@@ -1,5 +1,7 @@
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -45,9 +47,15 @@ public class dataDriven {
 //                        pull all the data of the row:
                         Iterator<Cell> cellVal = r.cellIterator();
                         while(cellVal.hasNext()){
-                            String data = cellVal.next().getStringCellValue();
-                            System.out.println(data);
-                            testData.add(data);
+                            Cell c = cellVal.next(); //storing the cell value as a cell object
+//                            Checking the cell value type
+                            if(c.getCellType()== CellType.STRING){
+                                testData.add(c.getStringCellValue());
+                            }else {
+//                                This is a POI built in method to convert numerical cell values to Strings
+                                testData.add(NumberToTextConverter.toText(c.getNumericCellValue()));
+                            }
+
                         }
                     }
 

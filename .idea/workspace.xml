@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616f41fc-d5b6-4744-88ae-18439d182a52" name="Changes" comment="Created a new test class to access the method">
-      <change beforePath="$PROJECT_DIR$/src/test/java/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SimpleTest.java" afterDir="false" />
+    <list default="true" id="616f41fc-d5b6-4744-88ae-18439d182a52" name="Changes" comment="Printing results of the worksheet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExcelDrivenData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExcelDrivenData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataDriven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataDriven.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668836984548</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Printing results of the worksheet">
+      <created>1668837174433</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668837174433</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +127,7 @@
     <MESSAGE value="Added the ability to find the &quot;Testcase&quot; column in the workbook" />
     <MESSAGE value="Moved the process to a method" />
     <MESSAGE value="Created a new test class to access the method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new test class to access the method" />
+    <MESSAGE value="Printing results of the worksheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Printing results of the worksheet" />
   </component>
 </project>
