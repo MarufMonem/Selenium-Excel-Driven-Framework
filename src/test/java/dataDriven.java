@@ -57,7 +57,4 @@ public class dataDriven {
         }
         return testData;
     }
-    public static void main(String[] args) throws IOException {
-        ArrayList<String> data= getData("Purchase");
-    }
 }
